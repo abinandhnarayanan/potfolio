@@ -81,3 +81,31 @@ function toggleTheme() {
         document.documentElement.classList.add("dark");
     }
 };*/
+
+// Smooth scroll
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute("href"))
+            .scrollIntoView({
+                behavior: "smooth"
+            });
+    });
+});
+
+// Fade animation
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("opacity-100","translate-y-0");
+        }
+    });
+});
+
+document.querySelectorAll("section").forEach(section => {
+    section.classList.add("opacity-0","translate-y-10","transition","duration-700");
+    observer.observe(section);
+});
