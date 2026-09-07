@@ -140,28 +140,61 @@ transition-colors duration-300
 </nav>
 
 
-    <!-- ----- home section ------ -->
-    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-2" id="hme">
-        <img src="images/abi.png" alt="" class="rounded-full w-32 " style="width: 300px; box-shadow: 0px 0px 10px purple;" />
-        <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
-            Hi! I&apos;m Abinandh N
-            <img src="images/hand-icon.png" alt="" class="w-6 mb-1" />
-        </h3>
-        <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Junior Python Fullstack Developer based in India.</h1>
-        <p class="max-w-2xl mx-auto font-Ovo">I am a junior Python full-stack developer passionate about developing scalable web applications and continuously improving my technical skills.</p>
+    <!-- Hero Section -->
+<div class="w-11/12 max-w-5xl mx-auto min-h-screen flex flex-col justify-center items-center text-center gap-5" id="top">
 
-        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
-            <a href="#contact" id="contact-me" 
-                class="px-10 py-2.5 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20]  flex items-center gap-2 dark:border-transparent" style="text-decoration:none; color: white;">
-                contact me <img src="images/right-arrow-white.png" alt="" class="w-4 " style="width:12px"/>
-            </a>
+    <img src="images/abi.png"
+         class="w-52 md:w-72 rounded-full border-4 border-purple-500 shadow-[0_0_30px_rgba(168,85,247,.6)] animate-bounce">
 
-            <a href="images/dev-icon.png" download
-                class="px-10 py-2.5 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20]  flex items-center gap-2 dark:border-transparent" style="text-decoration:none; color: white;">
-                my resume <img src="images/download-icon.png" alt="" class="w-4 dark:invert" />
-            </a>
-        </div>
+    <h3 class="text-xl md:text-2xl font-Ovo flex items-center gap-2">
+        Hi, I'm Abinandh N 👋
+    </h3>
+
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+        Python Full-Stack Developer
+    </h1>
+
+    <p class="max-w-2xl text-lg text-gray-600 dark:text-gray-300">
+        Building responsive web applications using Django, Python,
+        Bootstrap, JavaScript and PostgreSQL.
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-4 mt-4">
+
+        <a href="#work"
+           class="px-8 py-3 rounded-full bg-gradient-to-r from-purple-600 to-orange-500 text-white font-semibold hover:scale-105 duration-300 text-decoration-none">
+            View Projects
+        </a>
+
+        <a href="resume/Abinandh_Resume.pdf"
+           download
+           class="px-8 py-3 rounded-full border border-purple-500 hover:bg-purple-600 hover:text-white duration-300 text-decoration-none">
+            Download Resume
+        </a>
+
     </div>
+
+    <!-- Quick Stats -->
+    <div class="grid grid-cols-3 gap-6 mt-10 text-center">
+
+        <div>
+            <h2 class="text-3xl font-bold text-purple-600">5+</h2>
+            <p class="text-sm">Projects</p>
+        </div>
+
+        <div>
+            <h2 class="text-3xl font-bold text-purple-600">2+</h2>
+            <p class="text-sm">Live Apps</p>
+        </div>
+
+        <div>
+            <h2 class="text-3xl font-bold text-purple-600">100%</h2>
+            <p class="text-sm">Responsive</p>
+        </div>
+
+    </div>
+
+</div>
 
    
  <!-- ----- about me section ------ -->
@@ -238,6 +271,68 @@ transition-colors duration-300
         </div>
     </div>
 
+    <!-- Skills -->
+<section class="w-full px-[12%] py-16">
+
+<h4 class="text-center text-lg font-Ovo">Technical Skills</h4>
+<h2 class="text-center text-5xl font-Ovo mb-12">What I Use</h2>
+
+<div class="max-w-3xl mx-auto space-y-6">
+
+<div>
+    <div class="flex justify-between">
+        <span>Python</span>
+        <span>90%</span>
+    </div>
+    <div class="w-full bg-gray-300 rounded-full h-2">
+        <div class="bg-purple-600 h-2 rounded-full w-[90%]"></div>
+    </div>
+</div>
+
+<div>
+    <div class="flex justify-between">
+        <span>Django</span>
+        <span>85%</span>
+    </div>
+    <div class="w-full bg-gray-300 rounded-full h-2">
+        <div class="bg-purple-600 h-2 rounded-full w-[85%]"></div>
+    </div>
+</div>
+
+<div>
+    <div class="flex justify-between">
+        <span>JavaScript</span>
+        <span>75%</span>
+    </div>
+    <div class="w-full bg-gray-300 rounded-full h-2">
+        <div class="bg-purple-600 h-2 rounded-full w-[75%]"></div>
+    </div>
+</div>
+
+<div>
+    <div class="flex justify-between">
+        <span>Bootstrap</span>
+        <span>90%</span>
+    </div>
+    <div class="w-full bg-gray-300 rounded-full h-2">
+        <div class="bg-purple-600 h-2 rounded-full w-[90%]"></div>
+    </div>
+</div>
+
+<div>
+    <div class="flex justify-between">
+        <span>PostgreSQL</span>
+        <span>70%</span>
+    </div>
+    <div class="w-full bg-gray-300 rounded-full h-2">
+        <div class="bg-purple-600 h-2 rounded-full w-[70%]"></div>
+    </div>
+</div>
+
+</div>
+
+</section>
+
 
     <!-- My Work Section -->
     <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
@@ -279,29 +374,65 @@ transition-colors duration-300
                     </div>
                 </div>
             </div>
-       <div class="aspect-square rounded-lg relative overflow-hidden group">
-    <img src="images/freshmart.png"
-         class="w-full h-full object-cover object-top">
+            
+       <div class="rounded-xl overflow-hidden shadow-lg group bg-white dark:bg-[#2d0b59] hover:-translate-y-2 duration-300">
 
-    <div class="bg-white dark:bg-[#2d0b59] w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+<img src="images/freshmart.png"
+     class="w-full h-64 object-cover object-top">
 
-        <div>
-            <h2 class="font-semibold" style="font-size:15px;">FreshMart Grocery</h2>
-            <p class="text-sm text-gray-700 dark:text-gray-300">
-                Django E-commerce App
-            </p>
-        </div>
+<div class="p-5">
 
-        <a href="https://freshmart-grocery-ay7y.onrender.com/" target="_blank">
-            <div class="border rounded-full border-black dark:border-white w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                <img src="images/send-icon.png" alt="" class="w-5">
-            </div>
-        </a>
+<h3 class="text-xl font-bold dark:text-white">
+FreshMart Grocery
+</h3>
 
-    </div>
+<p class="text-gray-600 dark:text-gray-300 mt-2">
+A Django-based e-commerce application with cart,
+checkout, authentication and responsive UI.
+</p>
+
+<div class="flex flex-wrap gap-2 mt-4">
+
+<span class="px-3 py-1 text-xs bg-purple-100 text-purple-700 rounded-full">
+Django
+</span>
+
+<span class="px-3 py-1 text-xs bg-purple-100 text-purple-700 rounded-full">
+Bootstrap
+</span>
+
+<span class="px-3 py-1 text-xs bg-purple-100 text-purple-700 rounded-full">
+PostgreSQL
+</span>
+
+<span class="px-3 py-1 text-xs bg-purple-100 text-purple-700 rounded-full">
+Render
+</span>
+
 </div>
+
+<div class="flex gap-3 mt-5">
+
+<a href="https://freshmart-grocery-ay7y.onrender.com/"
+   target="_blank"
+   class="flex-1 text-center py-2 rounded-full bg-purple-600 text-white text-decoration-none hover:bg-purple-700">
+Live Demo
+</a>
+
+<a href="https://github.com/abinandhnarayanan/FreshMart-Grocery"
+   target="_blank"
+   class="flex-1 text-center py-2 rounded-full border border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white text-decoration-none">
+GitHub
+</a>
+
+</div>
+
+</div>
+
+</div>
+
            
-            </div>
+      
         </div><a href="#"
             class="w-max flex items-center justify-center gap-2 text-gray-700 border border-gray-300 dark:border-white/25 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full py-2 px-8 mx-auto my-20 duration-300 dark:text-white" style="text-decoration:none;">Show
             more<img src="images/right-arrow-bold.png" alt="" class="w-4 dark:hidden"><img
